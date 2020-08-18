@@ -33,7 +33,8 @@ const outFmt = "sanitizer_%s_%d.%s"
 
 var (
 	// LogFile the path to our logs.
-	LogFile = filepath.Join(os.TempDir(), "popeye.log")
+	wd, _ = os.Getwd()
+	LogFile = filepath.Join(wd, "popeye.log")
 	// DumpDir indicates a directory location for sanitizer reports.
 	DumpDir = dumpDir()
 	// ErrUnknownS3BucketProtocol defines the error if we can't parse the S3 URI
