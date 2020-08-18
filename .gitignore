@@ -2,7 +2,7 @@
 !/k8s/popeye/
 /k8s1
 *.out
-/execs
+#/execs
 *.test
 notes
 eugen1
@@ -11,7 +11,7 @@ eugen1
 .envrc
 gen.sh
 aa_dead
-popeye
+#popeye
 /junit
 .vscode
 .idea
